@@ -1,0 +1,17 @@
+<app-toolbar text="Witaj Mateusz" loginButton="Wyloguj"></app-toolbar>
+
+<div class="content" role="main">
+  <app-card header="Buttony">
+    <div class="row">
+      <app-btn text="Primary"></app-btn>
+      <app-btn text="Accent" [color]="'accent'"></app-btn>
+    </div>
+
+    <div class="row">
+      <app-btn text="Primary" icon="heroCalculator"></app-btn>
+      <app-btn text="Accent" [color]="'accent'" icon="heroUsers"></app-btn>
+    </div>
+  </app-card>
+
+  <app-task-list [tasks]="tasks$ | async" [loading]="isLoading"></app-task-list>
+</div>

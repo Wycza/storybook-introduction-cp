@@ -1,0 +1,6 @@
+<app-card header="Zaloguj">
+  <app-input label="Login" type="input" [(ngModel)]="loginField"></app-input>
+  <app-input label="Hasło" type="password" [(ngModel)]="passwordField"></app-input>
+
+  <app-btn text="Zaloguj" (click)="login()" color="accent"></app-btn>
+</app-card>

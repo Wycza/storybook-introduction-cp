@@ -1,0 +1,19 @@
+:host {
+  position: relative;
+}
+
+.notification {
+  background-color: red;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 8px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

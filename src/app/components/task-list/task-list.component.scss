@@ -1,0 +1,40 @@
+.list-items {
+  position: relative;
+  background: white;
+  min-width: 400px;
+  min-height: 300px;
+}
+
+.list-items .select-placeholder {
+  border: none;
+  width: 48px;
+}
+
+.loading-item {
+  height: 3rem;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  line-height: 1rem;
+  padding-left: 16px;
+}
+
+.loading-item .glow-checkbox,
+.loading-item .glow-text span {
+  animation: glow 1.5s ease-in-out infinite;
+  background: #eee;
+  color: transparent;
+  cursor: progress;
+  display: inline-block;
+}
+
+.loading-item .glow-checkbox {
+  margin-right: 16px;
+  width: 12px;
+  height: 12px;
+}
+
+.loading-item+.loading-item {
+  border-top: 1px solid #f0f9fb;
+}

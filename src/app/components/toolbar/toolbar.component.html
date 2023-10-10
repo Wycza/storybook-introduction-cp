@@ -1,0 +1,14 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <a href="./">
+    <img width="40" alt="Angular Logo" src="assets/storybook-logo.png" />
+  </a>
+  <span>{{text}}</span>
+  <div class="spacer"></div>
+  <ng-container *ngIf="loginButton">
+    <app-notification [value]="1"></app-notification>
+    <app-btn *ngIf="!darkMode" text="" (click)="toggleDarkMode(true)" icon="heroMoon"></app-btn>
+    <app-btn *ngIf="darkMode" text="" (click)="toggleDarkMode(false)" icon="heroSun"></app-btn>
+    <app-btn [text]="loginButton" icon="heroArrowLeftOnRectangle" (click)="logout()"></app-btn>
+  </ng-container>
+</div>
