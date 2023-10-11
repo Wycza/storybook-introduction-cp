@@ -1,0 +1,24 @@
+import { Story, Meta, Title, IconGallery, IconItem } from "@storybook/blocks";
+import * as IconStories from "./icon.stories";
+
+<Meta title="Icon gallery" />
+
+# Iconography
+
+<IconGallery>
+  <IconItem name="heroUsers">
+    <Story of={IconStories.heroUsers}></Story>
+  </IconItem>
+  <IconItem name="heroCalculator">
+    <Story of={IconStories.heroCalculator} />
+  </IconItem>
+  <IconItem name="heroMoon">
+    <Story of={IconStories.heroMoon} />
+  </IconItem>
+  <IconItem name="heroSun">
+    <Story of={IconStories.heroSun} />
+  </IconItem>
+  <IconItem name="heroBell">
+    <Story of={IconStories.heroBell} />
+  </IconItem>
+</IconGallery>
