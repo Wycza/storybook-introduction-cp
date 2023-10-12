@@ -109,3 +109,11 @@ export const DefaultNoTasks: Story = {
     }),
   ],
 };
+
+export const DefaultMobile: Story = {
+  parameters: {
+    viewport: {
+      defaultViewport: 'sm',
+    },
+  },
+};
